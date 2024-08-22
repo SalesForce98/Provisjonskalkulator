@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provisjonskalkulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Provisjonskalkulator</h2>
+        <div class="input-group">
+            <label for="sales">Antall salg denne måneden:</label>
+            <input type="number" id="sales" placeholder="F.eks. 80">
+        </div>
+        <div class="input-group">
+            <label for="hourlyRate">Din timeslønn (kr):</label>
+            <input type="number" id="hourlyRate" placeholder="F.eks. 200">
+        </div>
+        <div class="input-group">
+            <label for="workDays">Antall arbeidsdager i måneden:</label>
+            <input type="number" id="workDays" placeholder="F.eks. 22">
+        </div>
+        <button onclick="calculateSalary()">Beregn Bruttolønn</button>
+        
+        <div id="result">
+            <!-- Resultatet vises her -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
